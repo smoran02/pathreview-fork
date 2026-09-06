@@ -17,7 +17,7 @@ Create a branch from `main` using this format:
 <type>/<issue-number>-<short-description>
 ```
 
-Where `<issue-number>` is the GitHub issue number (the number shown under the issue title in the tracker — e.g., `#124`).
+Where `<issue-number>` is the GitHub issue number (the number shown under the issue title in the tracker, e.g., `#124`).
 
 Examples:
 - `fix/124-resume-parser-index-error`
@@ -61,7 +61,7 @@ test(agent): add unit tests for readme_scorer tool
 
 1. **Ensure your code passes all checks:** `make check && make test-unit`
 2. **Push your branch** and open a PR using the PR template
-3. **Fill out the PR template completely** — incomplete PRs will be sent back
+3. **Fill out the PR template completely**, incomplete PRs will be sent back
 4. **Respond to review feedback** within 48 hours
 5. **Squash fixup commits** before final merge if requested
 
@@ -118,6 +118,20 @@ If your issue involves adding a new tool to the agent system:
 3. Register the tool in `agent/orchestrator.py`
 4. Add unit tests in `tests/unit/test_<tool_name>.py`
 5. Add mock responses in `tests/fixtures/` if the tool calls external APIs
+
+## AI-Assisted Contributions
+
+AI-assisted work is welcome here under two conditions:
+
+1. **Disclose it.** Every pull request must fill in the "AI Assistance
+   Disclosure" section of the PR template: say whether and how AI tools
+   were used (drafting, debugging, test writing, and so on).
+2. **Own it.** You must personally understand, review, and test
+   everything you submit. "The AI wrote it" is never an answer to a
+   review question; if you cannot explain a line, do not submit it.
+
+Undisclosed AI use in a PR is treated the same as any other
+misrepresentation of your work.
 
 ## Questions?
 
